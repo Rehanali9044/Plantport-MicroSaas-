@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PlantPort</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PlantPort</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/products.html">Products</a>
+            <div class="cart-icon" onclick="window.location.href='/cart.html'">
+                🛒 <span id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="product-details" id="productDetails">
+        <div class="product-image">
+            <img id="productImage" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 id="productName"></h1>
+            <p id="productDescription"></p>
+            <p class="price" id="productPrice"></p>
+            <div class="delivery-info">
+                <p>✅ Available for Same-Day Delivery</p>
+            </div>
+            <div class="product-actions">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow()" class="primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/products.js"></script>
+</body>
+</html>

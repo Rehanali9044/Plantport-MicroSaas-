@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPort</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to PlantPort</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Products</h2>
+            <div class="products">
+                <% products.forEach(product => { %>
+                    <div class="product">
+                        <img src="<%= product.image %>" alt="<%= product.name %>">
+                        <h3><%= product.name %></h3>
+                        <p><%= product.description %></p>
+                        <p><strong>Price:</strong> $<%= product.price %></p>
+                    </div>
+                <% }); %>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PlantPort</p>
+    </footer>
+</body>
+</html>

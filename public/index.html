@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPort - Same Day Plant Delivery</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PlantPort</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/products.html">Products</a>
+            <div class="cart-icon" onclick="window.location.href='/cart.html'">
+                🛒 <span id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="delivery-banner">
+        <h2>🚚 Same Day Plant Delivery Available! Order before 2 PM</h2>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search plants...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <main>
+        <h2>Featured Plants</h2>
+        <div id="featuredProducts" class="products-grid"></div>
+    </main>
+
+    <script src="/js/home.js"></script>
+</body>
+</html>

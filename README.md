@@ -10,12 +10,23 @@ Features
 🔍 Search Functionality: Easy product search
 👤 Admin Panel: Manage inventory and products
 
+
+
 Technology Stack
+
+
+
 
 Frontend: HTML5, CSS3, Vanilla JavaScript
 Backend: Node.js, Express.js
 Database: SQLite3
 No external frameworks used (No React, Angular, or Vue)
+
+
+
+
+
+
 
 Project Structure
 Copyplantport/
@@ -32,6 +43,9 @@ Copyplantport/
 ├── README.md
 └── server.js              # Backend server
 Setup Instructions
+
+
+
 
 Prerequisites
 
